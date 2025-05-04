@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Simple Website</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .site-title {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .button-row {
+      display: flex;
+      gap: 10px;
+    }
+
+    .button-row button {
+      padding: 8px 16px;
+      font-size: 14px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .login-btn {
+      background-color: #4CAF50;
+      color: white;
+    }
+
+    .register-btn {
+      background-color: #008CBA;
+      color: white;
+    }
+
+    main {
+      padding: 40px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="site-title">My Simple Website</div>
+    <div class="button-row">
+        <button class="logout-btn" onclick="handleLogout()">Logout</button>
+      <button class="login-btn" onclick="handleLogin()">Login</button>
+      <button class="register-btn">Register</button>
+    </div>
+  </header>
+
+  <main>
+    <h1>Welcome to the Website</h1>
+    <p>This is a clean and basic layout with login and register buttons in the header.</p>
+    <div id="login-status"></div>
+  </main>
+  <script src="ukay.js"></script>
+</body>
+</html>
